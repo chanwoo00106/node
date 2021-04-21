@@ -60,7 +60,6 @@ name = 'Teemo'; //Error
 
 > var는 함수 스코프 이고 
 > 함수 스코프는 함수 내에서 선언된 변수만 그 지역 변수가 된다
-예)
 ``` javascript
 const a = 30;
   if (a >19){
