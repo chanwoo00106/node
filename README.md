@@ -127,7 +127,7 @@ print();
 > 객체 형식을 화살표 함수로 return을 간단하게 할 때 주의할 점이 있다
 > 객체는 중괄호에 감싸져 있는데 그 중괄호가 화살표 함수에 중괄호와 겹쳐서 그걸 소괄호로 묶어서 return해준다
 
-```jacascript
+```javascript
 // 이렇게 하면 안됨
 const obj = () => { name : 'Teemo', KDA : '30/0/21'}; // Error
 ```
