@@ -165,3 +165,10 @@ pr.then(a => { // then은 promise 코드를 성공 하면 실행. resolve에 넘
     console.log(error);
 })
 ```
+
+# async/await
+
+> async/await은 promise를 더 편하게 사용하려고 나온 것이다
+> 걍 일반 함수 맨 앞에 async를 넣어주면 그 함수는 promise가 되고
+> async 함수 안에선 await을 사용할 수 있다 (await은 async함수 밖에서는 사용할 수 없다)
+> 
