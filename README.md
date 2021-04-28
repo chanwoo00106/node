@@ -265,8 +265,17 @@ class anything{
 }
 
 class otherclass extends anything{
- 
+ constructor(any, sleep, state){
+  this.any = any;
+  this.sleep = sleep;
+  this.state = state;
+ }
+ print(){
+  console.log(this.any);
+  console.log(this.sleep);
+  console.log(this.state);
+ }
 }
-anything.printAny();
-anything.printSleep();
+const other = new other('배고파아아앙아아아아', '잠와아아아아아아앙아아아아ㅏ', '종진아 하지마');
+other.print();
 ```
