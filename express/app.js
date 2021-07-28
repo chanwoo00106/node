@@ -45,6 +45,10 @@ app.get('/err', () => {
     throw new Error('hahaha');
 });
 
+app.use((req, res, next) => {
+    res.status(404).send('이건 404 에러!!');
+});
+
 app.use((err, req, res, next) => {
     console.error(err);
     res.send('에러입니다!!');
