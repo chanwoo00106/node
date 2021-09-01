@@ -2,7 +2,7 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
-const {verityToken} = require('./middlewares')
+const { verifyToken } = require('./middlewares')
 
 const router = express.Router();
 
