@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>socket</title>
+  </head>
+  <body>
+    <ul class="chat"></ul>
+    <form>
+      <input type="text" />
+      <button>submit</button>
+    </form>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js"
+    integrity="sha512-nYuHvSAhY5lFZ4ixSViOwsEKFvlxHMU2NHts1ILuJgOS6ptUmAGt/0i5czIgMOahKZ6JN84YFDA+mCdky7dD8A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    const socket = io();
+    const form = document.querySelector("form");
+    const chat = document.querySelector(".chat");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      socket.emit("chat", "hello");
+    });
+  </script>
+</html>
